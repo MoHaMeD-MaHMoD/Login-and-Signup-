@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.trackyourhealth"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Configure only for each module that uses Java 8
+        // language features (either in its source code or
+        // through dependencies).
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // Add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    // Add this for using Firebase DataBase
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+
+    // Add this for using Firebase AUTHintiction
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+    // Add this for using Firebase Storge
+
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    // Butterknife requires
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+}

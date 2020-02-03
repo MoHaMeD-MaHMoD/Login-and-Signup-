@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "753503666423",
+    "firebase_url": "https://track-your-health-6bbaa.firebaseio.com",
+    "project_id": "track-your-health-6bbaa",
+    "storage_bucket": "track-your-health-6bbaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753503666423:android:8786f2783676dba72113f2",
+        "android_client_info": {
+          "package_name": "com.example.trackyourhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753503666423-dfe001f5oq0oiglu2bt6kpbelg2fi0df.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trackyourhealth",
+            "certificate_hash": "4357c9340b9adcdc54507ea6655143e9ff888a3f"
+          }
+        },
+        {
+          "client_id": "753503666423-u3ej2rgdkpvv5n5rjiqqcqq7v2pudliq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2TzzwPqoFm8W7KeGh_OiD7B7js-8v_Yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753503666423-u3ej2rgdkpvv5n5rjiqqcqq7v2pudliq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
